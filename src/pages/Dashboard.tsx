@@ -45,7 +45,7 @@ export default function Dashboard() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Donut Chart */}
-        <div className="glass-card p-6 animate-fade-in-up stagger-3">
+        <div className="glass-card p-6 animate-fade-in-up stagger-3 glow-blue">
           <h3 className="text-sm font-medium text-muted-foreground mb-4">Agent Status Distribution</h3>
           <div className="h-52">
             <ResponsiveContainer width="100%" height="100%">

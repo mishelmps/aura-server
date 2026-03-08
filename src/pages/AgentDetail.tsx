@@ -24,7 +24,7 @@ export default function AgentDetail() {
         <ArrowLeft className="h-4 w-4" /> Back to Agents
       </Link>
 
-      <div className="glass-card p-6 glow-blue">
+      <div className="glass-card p-6">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="flex items-center gap-4">
             <div className="p-3 rounded-xl bg-secondary/50">

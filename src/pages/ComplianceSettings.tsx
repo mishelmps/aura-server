@@ -8,7 +8,7 @@ export default function ComplianceSettings() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold gradient-text-green">Compliance Profiles</h1>
+        <h1 className="text-2xl font-bold text-foreground">Compliance Profiles</h1>
         <p className="text-muted-foreground text-sm mt-1">Configure and assign compliance profiles to agents</p>
       </div>
 

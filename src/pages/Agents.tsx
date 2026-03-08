@@ -27,7 +27,7 @@ export default function Agents() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold gradient-text-cyan">Agents</h1>
+        <h1 className="text-2xl font-bold text-foreground">Agents</h1>
         <p className="text-muted-foreground text-sm mt-1">Manage and monitor enrolled agents</p>
       </div>
 

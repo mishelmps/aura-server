@@ -70,7 +70,7 @@ export default function Dashboard() {
         </div>
 
         {/* Recent Alerts */}
-        <div className="glass-card p-6 animate-fade-in-up stagger-4 glow-red">
+        <div className="glass-card p-6 animate-fade-in-up stagger-4">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-sm font-medium text-muted-foreground">Recent Alerts</h3>
             <Link to="/alerts" className="text-xs text-blue-400 hover:text-blue-300 transition-colors">View all →</Link>

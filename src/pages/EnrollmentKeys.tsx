@@ -21,7 +21,7 @@ export default function EnrollmentKeys() {
         <Button className="bg-primary text-primary-foreground"><Key className="h-4 w-4 mr-1" />Create Key</Button>
       </div>
 
-      <div className="glass-card overflow-hidden glow-yellow">
+      <div className="glass-card overflow-hidden">
         <Table>
           <TableHeader>
             <TableRow className="border-border/50 hover:bg-transparent">

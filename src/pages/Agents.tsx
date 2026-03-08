@@ -39,7 +39,7 @@ export default function Agents() {
         </div>
       </div>
 
-      <div className="glass-card overflow-hidden glow-cyan">
+      <div className="glass-card overflow-hidden">
         <Table>
           <TableHeader>
             <TableRow className="border-border/50 hover:bg-transparent">

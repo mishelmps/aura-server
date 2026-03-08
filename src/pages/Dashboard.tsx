@@ -45,7 +45,7 @@ export default function Dashboard() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Donut Chart */}
-        <div className="glass-card p-6 animate-fade-in-up stagger-3 glow-blue">
+        <div className="glass-card p-6 animate-fade-in-up stagger-3">
           <h3 className="text-sm font-medium text-muted-foreground mb-4">Agent Status Distribution</h3>
           <div className="h-52">
             <ResponsiveContainer width="100%" height="100%">
@@ -70,7 +70,7 @@ export default function Dashboard() {
         </div>
 
         {/* Recent Alerts */}
-        <div className="glass-card p-6 animate-fade-in-up stagger-4 glow-red">
+        <div className="glass-card p-6 animate-fade-in-up stagger-4">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-sm font-medium text-muted-foreground">Recent Alerts</h3>
             <Link to="/alerts" className="text-xs text-blue-400 hover:text-blue-300 transition-colors">View all →</Link>
@@ -91,7 +91,7 @@ export default function Dashboard() {
         </div>
 
         {/* Agent Status List */}
-        <div className="glass-card p-6 animate-fade-in-up stagger-5 glow-green">
+        <div className="glass-card p-6 animate-fade-in-up stagger-5">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-sm font-medium text-muted-foreground">Agent Status</h3>
             <Link to="/agents" className="text-xs text-blue-400 hover:text-blue-300 transition-colors">View all →</Link>

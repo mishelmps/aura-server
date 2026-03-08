@@ -10,32 +10,31 @@ import {
 } from "@/components/ui/sidebar";
 
 const mainItems = [
-  { title: "Dashboard", url: "/", icon: LayoutDashboard },
-  { title: "Agents", url: "/agents", icon: Monitor },
-  { title: "Certificates", url: "/certificates", icon: ShieldCheck },
-  { title: "Issued Certificates", url: "/issued-certificates", icon: FileText },
-  { title: "Alerts", url: "/alerts", icon: Bell },
+  { title: "Dashboard", url: "/", icon: LayoutDashboard, iconClass: "icon-bg-blue" },
+  { title: "Agents", url: "/agents", icon: Monitor, iconClass: "icon-bg-cyan" },
+  { title: "Certificates", url: "/certificates", icon: ShieldCheck, iconClass: "icon-bg-green" },
+  { title: "Issued Certificates", url: "/issued-certificates", icon: FileText, iconClass: "icon-bg-purple" },
+  { title: "Alerts", url: "/alerts", icon: Bell, iconClass: "icon-bg-orange" },
 ];
 
 const caItems = [
-  { title: "Certificate Authority", url: "/ca-management", icon: Building2 },
-  { title: "Templates", url: "/templates", icon: FileCode2 },
-  { title: "Request Certificate", url: "/request-certificate", icon: FilePlus },
-  { title: "Authorization", url: "/authorization", icon: Users },
+  { title: "Certificate Authority", url: "/ca-management", icon: Building2, iconClass: "icon-bg-pink" },
+  { title: "Templates", url: "/templates", icon: FileCode2, iconClass: "icon-bg-yellow" },
+  { title: "Request Certificate", url: "/request-certificate", icon: FilePlus, iconClass: "icon-bg-green" },
+  { title: "Authorization", url: "/authorization", icon: Users, iconClass: "icon-bg-red" },
 ];
 
 const settingsItems = [
-  { title: "Settings", url: "/settings", icon: Settings },
-  { title: "Agent Management", url: "/settings/agents", icon: UserCog },
-  { title: "Enrollment Keys", url: "/settings/enrollment-keys", icon: Key },
-  { title: "MSI Packages", url: "/settings/msi", icon: Package },
-  { title: "Compliance", url: "/settings/compliance", icon: ClipboardCheck },
+  { title: "Settings", url: "/settings", icon: Settings, iconClass: "icon-bg-blue" },
+  { title: "Agent Management", url: "/settings/agents", icon: UserCog, iconClass: "icon-bg-cyan" },
+  { title: "Enrollment Keys", url: "/settings/enrollment-keys", icon: Key, iconClass: "icon-bg-yellow" },
+  { title: "MSI Packages", url: "/settings/msi", icon: Package, iconClass: "icon-bg-purple" },
+  { title: "Compliance", url: "/settings/compliance", icon: ClipboardCheck, iconClass: "icon-bg-green" },
 ];
 
 function NavGroup({ label, items }: { label: string; items: typeof mainItems }) {
   const { state } = useSidebar();
   const collapsed = state === "collapsed";
-  const location = useLocation();
 
   return (
     <SidebarGroup>
@@ -51,7 +50,7 @@ function NavGroup({ label, items }: { label: string; items: typeof mainItems }) 
                   className="hover:bg-sidebar-accent/50 transition-colors"
                   activeClassName="bg-sidebar-accent text-sidebar-primary font-medium"
                 >
-                  <item.icon className="h-4 w-4 shrink-0" />
+                  <item.icon className={`h-4 w-4 shrink-0 ${item.iconClass}`} />
                   {!collapsed && <span>{item.title}</span>}
                 </NavLink>
               </SidebarMenuButton>

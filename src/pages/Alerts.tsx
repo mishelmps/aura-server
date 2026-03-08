@@ -42,7 +42,7 @@ export default function Alerts() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-foreground">Alerts</h1>
+        <h1 className="text-2xl font-bold gradient-text-orange">Alerts</h1>
         <p className="text-muted-foreground text-sm mt-1">Monitor certificate and agent alerts</p>
       </div>
 

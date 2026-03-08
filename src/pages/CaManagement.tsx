@@ -9,7 +9,7 @@ export default function CaManagement() {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-foreground">Certificate Authority</h1>
+          <h1 className="text-2xl font-bold gradient-text-pink">Certificate Authority</h1>
           <p className="text-muted-foreground text-sm mt-1">Manage Certificate Authority connections</p>
         </div>
         <Button className="bg-primary text-primary-foreground hover:bg-primary/90">Discover CAs</Button>
@@ -26,8 +26,8 @@ export default function CaManagement() {
           <div key={ca.id} className={`glass-card-hover p-6 animate-fade-in-up`} style={{ animationDelay: `${i * 80}ms` }}>
             <div className="flex items-start justify-between mb-4">
               <div className="flex items-center gap-3">
-                <div className="p-2 rounded-lg bg-secondary/50">
-                  <Building2 className="h-5 w-5 text-primary" />
+                <div className="p-2 rounded-lg bg-gradient-to-br from-[hsl(330,81%,60%,0.15)] to-[hsl(270,76%,60%,0.15)]">
+                  <Building2 className="h-5 w-5 icon-bg-pink" />
                 </div>
                 <div>
                   <h3 className="font-medium text-foreground">{ca.commonName}</h3>

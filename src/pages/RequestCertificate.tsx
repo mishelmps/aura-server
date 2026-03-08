@@ -24,7 +24,7 @@ export default function RequestCertificate() {
   return (
     <div className="space-y-6 max-w-3xl">
       <div>
-        <h1 className="text-2xl font-bold text-foreground">Request Certificate</h1>
+        <h1 className="text-2xl font-bold gradient-text-green">Request Certificate</h1>
         <p className="text-muted-foreground text-sm mt-1">Submit a new certificate request</p>
       </div>
 
@@ -32,13 +32,13 @@ export default function RequestCertificate() {
       <div className="flex items-center gap-2">
         {steps.map((s, i) => (
           <div key={s} className="flex items-center gap-2">
-            <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium ${
-              i < step ? 'bg-primary text-primary-foreground' : i === step ? 'bg-primary text-primary-foreground' : 'bg-secondary text-muted-foreground'
+            <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium transition-all ${
+              i < step ? 'bg-gradient-to-r from-primary to-accent text-primary-foreground shadow-lg shadow-primary/30' : i === step ? 'bg-gradient-to-r from-primary to-accent text-primary-foreground shadow-lg shadow-primary/30 ring-2 ring-primary/30 ring-offset-2 ring-offset-background' : 'bg-secondary text-muted-foreground'
             }`}>
               {i < step ? <Check className="h-4 w-4" /> : i + 1}
             </div>
             <span className={`text-sm hidden sm:inline ${i === step ? 'text-foreground font-medium' : 'text-muted-foreground'}`}>{s}</span>
-            {i < steps.length - 1 && <div className="w-8 h-px bg-border" />}
+            {i < steps.length - 1 && <div className={`w-8 h-px ${i < step ? 'bg-gradient-to-r from-primary to-accent' : 'bg-border'}`} />}
           </div>
         ))}
       </div>

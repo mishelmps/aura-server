@@ -8,7 +8,7 @@ export default function Templates() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold gradient-text-yellow">Templates</h1>
+        <h1 className="text-2xl font-bold text-foreground">Templates</h1>
         <p className="text-muted-foreground text-sm mt-1">Certificate templates from Active Directory and custom sources</p>
       </div>
 
@@ -18,7 +18,7 @@ export default function Templates() {
         <StatCard title="Custom" value={templates.filter(t => t.source === 'Custom').length} icon={FileCode2} glow="purple" />
       </div>
 
-      <div className="glass-card overflow-hidden">
+      <div className="glass-card overflow-hidden glow-yellow">
         <Table>
           <TableHeader>
             <TableRow className="border-border/50 hover:bg-transparent">

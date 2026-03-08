@@ -24,7 +24,7 @@ export default function RequestCertificate() {
   return (
     <div className="space-y-6 max-w-3xl">
       <div>
-        <h1 className="text-2xl font-bold gradient-text-green">Request Certificate</h1>
+        <h1 className="text-2xl font-bold text-foreground">Request Certificate</h1>
         <p className="text-muted-foreground text-sm mt-1">Submit a new certificate request</p>
       </div>
 
@@ -43,7 +43,7 @@ export default function RequestCertificate() {
         ))}
       </div>
 
-      <div className="glass-card p-6">
+      <div className="glass-card p-6 glow-green">
         {step === 0 && (
           <div className="space-y-4">
             <h3 className="font-medium text-foreground">Select a certificate template</h3>

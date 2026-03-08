@@ -12,7 +12,7 @@ export default function AgentManagement() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold gradient-text-cyan">Agent Management</h1>
+        <h1 className="text-2xl font-bold text-foreground">Agent Management</h1>
         <p className="text-muted-foreground text-sm mt-1">Manage agent deployment and licensing</p>
       </div>
 
@@ -22,14 +22,14 @@ export default function AgentManagement() {
         <StatCard title="License Slots" value="12/14" icon={Scale} glow="cyan" />
       </div>
 
-      <div className="glass-card p-6">
+      <div className="glass-card p-6 glow-cyan">
         <h3 className="font-medium text-foreground mb-3">License Usage</h3>
         <Progress value={85} className="h-3 colorful-progress" />
         <p className="text-xs text-muted-foreground mt-2">12 of 14 agent license slots used — <span className="gradient-text-orange font-semibold">85%</span></p>
       </div>
 
       {pendingAgents.length > 0 && (
-        <div className="glass-card overflow-hidden">
+        <div className="glass-card overflow-hidden glow-orange">
           <div className="p-4 border-b border-border/50">
             <h3 className="font-medium text-foreground">Pending Agent Approvals</h3>
           </div>

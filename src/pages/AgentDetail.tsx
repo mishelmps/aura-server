@@ -31,7 +31,7 @@ export default function AgentDetail() {
               <Monitor className="h-8 w-8 text-primary" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold gradient-text-blue">{agent.hostname}</h1>
+              <h1 className="text-2xl font-bold text-foreground">{agent.hostname}</h1>
               <p className="text-muted-foreground text-sm">{agent.ipAddress} · {agent.os}</p>
             </div>
           </div>
@@ -58,7 +58,7 @@ export default function AgentDetail() {
         </div>
       </div>
 
-      <div className="glass-card overflow-hidden">
+      <div className="glass-card overflow-hidden glow-cyan">
         <div className="p-4 border-b border-border/50">
           <h3 className="font-medium text-foreground">Certificates ({agentCerts.length})</h3>
         </div>

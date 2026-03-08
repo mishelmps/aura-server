@@ -14,7 +14,7 @@ export default function Authorization() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold gradient-text-red">Authorization & Roles</h1>
+        <h1 className="text-2xl font-bold text-foreground">Authorization & Roles</h1>
         <p className="text-muted-foreground text-sm mt-1">Manage user roles and permissions</p>
       </div>
 
@@ -25,7 +25,7 @@ export default function Authorization() {
         <StatCard title="Auditors" value={roleAssignments.filter(r => r.role === 'Auditor').length} icon={Eye} glow="purple" />
       </div>
 
-      <div className="glass-card overflow-hidden">
+      <div className="glass-card overflow-hidden glow-red">
         <Table>
           <TableHeader>
             <TableRow className="border-border/50 hover:bg-transparent">

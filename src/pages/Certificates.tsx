@@ -26,7 +26,7 @@ export default function Certificates() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-foreground">Certificates</h1>
+        <h1 className="text-2xl font-bold gradient-text-green">Certificates</h1>
         <p className="text-muted-foreground text-sm mt-1">Discovered certificates across all agents</p>
       </div>
 

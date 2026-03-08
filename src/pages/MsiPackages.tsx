@@ -23,8 +23,8 @@ export default function MsiPackages() {
           <div key={pkg.id} className="glass-card-hover p-5 animate-fade-in-up" style={{ animationDelay: `${i * 80}ms` }}>
             <div className="flex items-start justify-between">
               <div className="flex items-center gap-3">
-                <div className="p-2 rounded-lg bg-secondary/50">
-                  <Package className="h-5 w-5 text-primary" />
+                <div className="p-2 rounded-lg bg-gradient-to-br from-[hsl(270,76%,60%,0.15)] to-[hsl(217,91%,60%,0.15)]">
+                  <Package className="h-5 w-5 icon-bg-purple" />
                 </div>
                 <div>
                   <h3 className="font-medium text-foreground">{pkg.name}</h3>

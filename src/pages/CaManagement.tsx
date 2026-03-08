@@ -26,8 +26,8 @@ export default function CaManagement() {
           <div key={ca.id} className={`glass-card-hover p-6 animate-fade-in-up`} style={{ animationDelay: `${i * 80}ms` }}>
             <div className="flex items-start justify-between mb-4">
               <div className="flex items-center gap-3">
-                <div className="p-2 rounded-lg bg-secondary/50">
-                  <Building2 className="h-5 w-5 text-primary" />
+                <div className="p-2 rounded-lg bg-gradient-to-br from-[hsl(330,81%,60%,0.15)] to-[hsl(270,76%,60%,0.15)]">
+                  <Building2 className="h-5 w-5 icon-bg-pink" />
                 </div>
                 <div>
                   <h3 className="font-medium text-foreground">{ca.commonName}</h3>

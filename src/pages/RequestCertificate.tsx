@@ -38,7 +38,7 @@ export default function RequestCertificate() {
               {i < step ? <Check className="h-4 w-4" /> : i + 1}
             </div>
             <span className={`text-sm hidden sm:inline ${i === step ? 'text-foreground font-medium' : 'text-muted-foreground'}`}>{s}</span>
-            {i < steps.length - 1 && <div className="w-8 h-px bg-border" />}
+            {i < steps.length - 1 && <div className={`w-8 h-px ${i < step ? 'bg-gradient-to-r from-primary to-accent' : 'bg-border'}`} />}
           </div>
         ))}
       </div>

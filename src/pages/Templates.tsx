@@ -18,7 +18,7 @@ export default function Templates() {
         <StatCard title="Custom" value={templates.filter(t => t.source === 'Custom').length} icon={FileCode2} glow="purple" />
       </div>
 
-      <div className="glass-card overflow-hidden">
+      <div className="glass-card overflow-hidden glow-yellow">
         <Table>
           <TableHeader>
             <TableRow className="border-border/50 hover:bg-transparent">

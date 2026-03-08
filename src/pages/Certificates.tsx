@@ -38,7 +38,7 @@ export default function Certificates() {
         </div>
       </div>
 
-      <div className="glass-card overflow-hidden">
+      <div className="glass-card overflow-hidden glow-green">
         <Table>
           <TableHeader>
             <TableRow className="border-border/50 hover:bg-transparent">

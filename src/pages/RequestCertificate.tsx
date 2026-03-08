@@ -43,7 +43,7 @@ export default function RequestCertificate() {
         ))}
       </div>
 
-      <div className="glass-card p-6">
+      <div className="glass-card p-6 glow-green">
         {step === 0 && (
           <div className="space-y-4">
             <h3 className="font-medium text-foreground">Select a certificate template</h3>

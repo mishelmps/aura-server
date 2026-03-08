@@ -91,7 +91,7 @@ export default function Dashboard() {
         </div>
 
         {/* Agent Status List */}
-        <div className="glass-card p-6 animate-fade-in-up stagger-5">
+        <div className="glass-card p-6 animate-fade-in-up stagger-5 glow-green">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-sm font-medium text-muted-foreground">Agent Status</h3>
             <Link to="/agents" className="text-xs text-blue-400 hover:text-blue-300 transition-colors">View all →</Link>

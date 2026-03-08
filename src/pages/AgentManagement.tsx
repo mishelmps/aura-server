@@ -29,7 +29,7 @@ export default function AgentManagement() {
       </div>
 
       {pendingAgents.length > 0 && (
-        <div className="glass-card overflow-hidden">
+        <div className="glass-card overflow-hidden glow-orange">
           <div className="p-4 border-b border-border/50">
             <h3 className="font-medium text-foreground">Pending Agent Approvals</h3>
           </div>

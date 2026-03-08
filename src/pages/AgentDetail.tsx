@@ -58,7 +58,7 @@ export default function AgentDetail() {
         </div>
       </div>
 
-      <div className="glass-card overflow-hidden glow-cyan">
+      <div className="glass-card overflow-hidden">
         <div className="p-4 border-b border-border/50">
           <h3 className="font-medium text-foreground">Certificates ({agentCerts.length})</h3>
         </div>

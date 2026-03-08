@@ -38,7 +38,7 @@ export default function Settings() {
         </TabsList>
 
         <TabsContent value="alerts">
-          <div className="glass-card overflow-hidden glow-blue">
+          <div className="glass-card overflow-hidden">
             <Table>
               <TableHeader>
                 <TableRow className="border-border/50 hover:bg-transparent">

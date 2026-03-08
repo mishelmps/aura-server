@@ -25,7 +25,7 @@ export default function Authorization() {
         <StatCard title="Auditors" value={roleAssignments.filter(r => r.role === 'Auditor').length} icon={Eye} glow="purple" />
       </div>
 
-      <div className="glass-card overflow-hidden glow-red">
+      <div className="glass-card overflow-hidden">
         <Table>
           <TableHeader>
             <TableRow className="border-border/50 hover:bg-transparent">

@@ -38,7 +38,7 @@ function NavGroup({ label, items }: { label: string; items: typeof mainItems }) 
   const location = useLocation();
 
   return (
-    <SidebarGroup defaultOpen>
+    <SidebarGroup>
       <SidebarGroupLabel className="text-xs uppercase tracking-wider text-muted-foreground/70">{label}</SidebarGroupLabel>
       <SidebarGroupContent>
         <SidebarMenu>

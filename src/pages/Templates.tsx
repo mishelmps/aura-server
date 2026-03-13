@@ -3,13 +3,17 @@ import { StatCard } from "@/components/StatCard";
 import { templates } from "@/data/mockData";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
+import CreateTemplateDialog from "@/components/CreateTemplateDialog";
 
 export default function Templates() {
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-foreground">Templates</h1>
-        <p className="text-muted-foreground text-sm mt-1">Certificate templates from Active Directory and custom sources</p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-2xl font-bold text-foreground">Templates</h1>
+          <p className="text-muted-foreground text-sm mt-1">Certificate templates from Active Directory and custom sources</p>
+        </div>
+        <CreateTemplateDialog />
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">

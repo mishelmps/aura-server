@@ -234,9 +234,10 @@ export const msiPackages: MsiPackage[] = [
 ];
 
 export const complianceProfiles = [
-  { id: '1', name: 'Production', description: 'Strict compliance for production servers. Requires RSA 2048+ or ECDSA 256+, max 1-year validity.', agentCount: 6, rules: 12 },
-  { id: '2', name: 'Staging', description: 'Relaxed compliance for staging/test. Allows self-signed certificates.', agentCount: 1, rules: 6 },
-  { id: '3', name: 'Development', description: 'Minimal enforcement for developer workstations.', agentCount: 2, rules: 3 },
-  { id: '4', name: 'Domain Controllers', description: 'Specialized profile for domain controllers with Kerberos certificate requirements.', agentCount: 1, rules: 8 },
-  { id: '5', name: 'DMZ', description: 'High-security profile for DMZ-facing servers. Requires TLS 1.2+ and strong cipher suites.', agentCount: 1, rules: 15 },
+  { id: 'none', name: 'No Profile', description: 'No restrictions applied. All settings are allowed.', standards: [] },
+  { id: 'nist-current', name: 'NIST SP 800-131A (Current)', description: 'NIST transitioning guidelines — valid through 2030. RSA-2048 minimum, SHA-256 minimum.', standards: [{ label: 'NIST SP 800-131A Rev. 2 (2019)', color: 'cyan' }] },
+  { id: 'nist-post2030', name: 'NIST SP 800-131A (Post-2030)', description: 'Future-proof — RSA-3072 minimum or ECC-256. Recommended for long-lived certificates.', standards: [{ label: 'NIST SP 800-131A Rev. 2', color: 'green' }, { label: 'SP 800-57 Part 1', color: 'green' }] },
+  { id: 'fips', name: 'FIPS 140-2 / 140-3', description: 'FIPS-approved cryptographic algorithms only. Required for US federal environments.', standards: [{ label: 'FIPS 140-2', color: 'red' }, { label: 'FIPS 140-3', color: 'red' }, { label: 'FIPS 186-5', color: 'red' }] },
+  { id: 'cabf', name: 'CA/Browser Forum Baseline', description: 'Public TLS certificate requirements. 397-day max validity, SAN required, no SHA-1.', standards: [{ label: 'CA/Browser Forum Baseline Requirements v2.0', color: 'green' }] },
+  { id: 'custom', name: 'Custom', description: 'Define your own minimum key size, allowed algorithms, and validity limits.', standards: [] },
 ];

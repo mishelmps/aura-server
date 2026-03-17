@@ -1,9 +1,13 @@
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
 import { Outlet } from "react-router-dom";
-import { Shield } from "lucide-react";
+import { Shield, Sun, Moon } from "lucide-react";
+import { useTheme } from "@/hooks/use-theme";
+import { Button } from "@/components/ui/button";
 
 export default function Layout() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <SidebarProvider>
       <div className="min-h-screen flex w-full">
@@ -16,6 +20,16 @@ export default function Layout() {
                 <Shield className="h-4 w-4 text-white" />
               </div>
               <span className="font-bold text-foreground tracking-tight bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">MD CertManager</span>
+            </div>
+            <div className="ml-auto">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={toggleTheme}
+                className="text-muted-foreground hover:text-foreground"
+              >
+                {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+              </Button>
             </div>
           </header>
           <main className="flex-1 overflow-auto p-6">

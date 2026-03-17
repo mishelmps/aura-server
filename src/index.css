@@ -116,6 +116,12 @@
       radial-gradient(ellipse at 90% 80%, hsl(217 91% 60% / 0.06) 0%, transparent 50%),
       radial-gradient(ellipse at 50% 50%, hsl(330 81% 60% / 0.03) 0%, transparent 50%);
     background-attachment: fixed;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .light body {
+    background-image:
+      radial-gradient(ellipse at 10% 20%, hsl(217 91% 50% / 0.04) 0%, transparent 50%),
+      radial-gradient(ellipse at 90% 80%, hsl(262 83% 55% / 0.03) 0%, transparent 50%);
   }
 }
 

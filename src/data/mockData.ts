@@ -234,10 +234,9 @@ export const msiPackages: MsiPackage[] = [
 ];
 
 export const complianceProfiles = [
-  { id: 'none', name: 'No Profile', description: 'No restrictions applied. All settings are allowed.', standards: [] },
-  { id: 'nist-current', name: 'NIST SP 800-131A (Current)', description: 'NIST transitioning guidelines — valid through 2030. RSA-2048 minimum, SHA-256 minimum.', standards: [{ label: 'NIST SP 800-131A Rev. 2 (2019)', color: 'cyan' }] },
-  { id: 'nist-post2030', name: 'NIST SP 800-131A (Post-2030)', description: 'Future-proof — RSA-3072 minimum or ECC-256. Recommended for long-lived certificates.', standards: [{ label: 'NIST SP 800-131A Rev. 2', color: 'green' }, { label: 'SP 800-57 Part 1', color: 'green' }] },
-  { id: 'fips', name: 'FIPS 140-2 / 140-3', description: 'FIPS-approved cryptographic algorithms only. Required for US federal environments.', standards: [{ label: 'FIPS 140-2', color: 'red' }, { label: 'FIPS 140-3', color: 'red' }, { label: 'FIPS 186-5', color: 'red' }] },
-  { id: 'cabf', name: 'CA/Browser Forum Baseline', description: 'Public TLS certificate requirements. 397-day max validity, SAN required, no SHA-1.', standards: [{ label: 'CA/Browser Forum Baseline Requirements v2.0', color: 'green' }] },
-  { id: 'custom', name: 'Custom', description: 'Define your own minimum key size, allowed algorithms, and validity limits.', standards: [] },
+  { id: 'none', name: 'No Profile', description: 'No restrictions applied.', standards: [], specs: { minRsa: 'Any', minEcc: 'Any', hashAlgorithms: 'Any', maxValidity: 'Unlimited', keyUsage: 'Any', sanRequired: false } },
+  { id: 'nist-current', name: 'NIST Current', description: 'NIST SP 800-131A Rev. 2 — valid through 2030.', standards: [{ label: 'NIST SP 800-131A', color: 'cyan' }], specs: { minRsa: '2048-bit', minEcc: 'P-256', hashAlgorithms: 'SHA-256, SHA-384, SHA-512', maxValidity: '3 Years', keyUsage: 'Digital Signature, Key Encipherment', sanRequired: false } },
+  { id: 'nist-post2030', name: 'NIST Post-2030', description: 'Future-proof cryptographic requirements.', standards: [{ label: 'NIST SP 800-131A', color: 'green' }, { label: 'SP 800-57', color: 'green' }], specs: { minRsa: '3072-bit', minEcc: 'P-256', hashAlgorithms: 'SHA-256, SHA-384, SHA-512', maxValidity: '2 Years', keyUsage: 'Digital Signature, Key Encipherment', sanRequired: false } },
+  { id: 'fips', name: 'FIPS 140-2/3', description: 'FIPS-approved algorithms only. US federal.', standards: [{ label: 'FIPS 140-2', color: 'red' }, { label: 'FIPS 140-3', color: 'red' }], specs: { minRsa: '2048-bit', minEcc: 'P-256', hashAlgorithms: 'SHA-256, SHA-384, SHA-512', maxValidity: '3 Years', keyUsage: 'FIPS-approved only', sanRequired: false } },
+  { id: 'cabf', name: 'CA/B Forum', description: 'Public TLS baseline requirements.', standards: [{ label: 'CA/Browser Forum v2.0', color: 'green' }], specs: { minRsa: '2048-bit', minEcc: 'P-256', hashAlgorithms: 'SHA-256, SHA-384, SHA-512', maxValidity: '397 Days', keyUsage: 'Digital Signature, Key Encipherment', sanRequired: true } },
 ];

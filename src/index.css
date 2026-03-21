@@ -65,42 +65,42 @@
   }
 
   .light {
-    --background: 215 20% 16%;
-    --foreground: 210 25% 88%;
+    --background: 215 18% 90%;
+    --foreground: 215 25% 15%;
 
-    --card: 215 22% 19%;
-    --card-foreground: 210 25% 88%;
+    --card: 215 15% 95%;
+    --card-foreground: 215 25% 15%;
 
-    --popover: 215 22% 19%;
-    --popover-foreground: 210 25% 88%;
+    --popover: 215 15% 95%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 210 70% 55%;
+    --primary: 215 70% 45%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 215 18% 24%;
-    --secondary-foreground: 210 25% 88%;
+    --secondary: 215 12% 85%;
+    --secondary-foreground: 215 25% 20%;
 
-    --muted: 215 16% 22%;
-    --muted-foreground: 215 15% 55%;
+    --muted: 215 10% 87%;
+    --muted-foreground: 215 10% 42%;
 
-    --accent: 210 70% 55%;
+    --accent: 215 70% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 215 16% 26%;
-    --input: 215 16% 26%;
-    --ring: 210 70% 55%;
+    --border: 215 14% 78%;
+    --input: 215 14% 78%;
+    --ring: 215 70% 45%;
 
-    --sidebar-background: 215 22% 14%;
-    --sidebar-foreground: 215 15% 55%;
-    --sidebar-primary: 210 70% 55%;
+    --sidebar-background: 215 16% 86%;
+    --sidebar-foreground: 215 10% 38%;
+    --sidebar-primary: 215 70% 45%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 215 18% 20%;
-    --sidebar-accent-foreground: 210 25% 88%;
-    --sidebar-border: 215 16% 22%;
-    --sidebar-ring: 210 70% 55%;
+    --sidebar-accent: 215 14% 82%;
+    --sidebar-accent-foreground: 215 25% 15%;
+    --sidebar-border: 215 12% 80%;
+    --sidebar-ring: 215 70% 45%;
   }
 }
 
@@ -120,9 +120,9 @@
   }
   .light body {
     background-image:
-      radial-gradient(ellipse at 10% 20%, hsl(210 70% 55% / 0.07) 0%, transparent 50%),
-      radial-gradient(ellipse at 90% 80%, hsl(200 60% 45% / 0.05) 0%, transparent 50%),
-      radial-gradient(ellipse at 50% 50%, hsl(220 50% 40% / 0.04) 0%, transparent 50%);
+      radial-gradient(ellipse at 10% 20%, hsl(215 70% 45% / 0.06) 0%, transparent 50%),
+      radial-gradient(ellipse at 90% 80%, hsl(215 50% 50% / 0.05) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 50%, hsl(220 40% 55% / 0.03) 0%, transparent 50%);
   }
 }
 
@@ -145,9 +145,9 @@
     border-radius: var(--radius);
   }
   .light .glass-card {
-    background: linear-gradient(135deg, rgba(38, 50, 66, 0.6), rgba(30, 40, 56, 0.4));
-    border: 1px solid hsl(210 70% 55% / 0.12);
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.75), rgba(230, 235, 242, 0.55));
+    border: 1px solid hsl(215 14% 78% / 0.6);
+    box-shadow: 0 2px 12px hsl(215 30% 30% / 0.06);
   }
 
   .glass-card-hover {
@@ -164,14 +164,14 @@
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35), 0 0 20px hsl(217 91% 60% / 0.08);
   }
   .light .glass-card-hover {
-    background: linear-gradient(135deg, rgba(38, 50, 66, 0.6), rgba(30, 40, 56, 0.4));
-    border: 1px solid hsl(210 70% 55% / 0.12);
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.75), rgba(230, 235, 242, 0.55));
+    border: 1px solid hsl(215 14% 78% / 0.6);
+    box-shadow: 0 2px 12px hsl(215 30% 30% / 0.06);
   }
   .light .glass-card-hover:hover {
-    border-color: hsl(210 70% 55% / 0.3);
-    background: linear-gradient(135deg, rgba(45, 58, 78, 0.7), rgba(35, 48, 66, 0.5));
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 0 0 20px hsl(210 70% 55% / 0.08);
+    border-color: hsl(215 70% 45% / 0.3);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(225, 232, 242, 0.7));
+    box-shadow: 0 12px 40px hsl(215 30% 30% / 0.1), 0 0 20px hsl(215 70% 45% / 0.06);
   }
 
   .glow-blue {

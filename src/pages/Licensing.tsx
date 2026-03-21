@@ -166,10 +166,10 @@ export default function Licensing() {
             {licenseStatus.isActivated && (
               <>
                 <div className="border-t border-border/40" />
-                <div className="flex items-start gap-3 p-4 rounded-lg bg-emerald-500/10 border border-emerald-500/20">
-                  <CheckCircle className="h-5 w-5 text-emerald-400 mt-0.5 shrink-0" />
+                <div className="flex items-start gap-3 p-4 rounded-lg bg-[hsl(var(--glow-green)/0.1)] border border-[hsl(var(--glow-green)/0.2)]">
+                  <CheckCircle className="h-5 w-5 text-[hsl(var(--glow-green))] mt-0.5 shrink-0" />
                   <div className="space-y-1">
-                    <p className="text-sm font-semibold text-emerald-400">License Active</p>
+                    <p className="text-sm font-semibold text-[hsl(var(--glow-green))]">License Active</p>
                     <p className="text-sm text-muted-foreground">
                       Licensed for <span className="font-semibold text-foreground">{licenseStatus.maxLicensedAgents}</span> agents.
                       {" "}Expires <span className="font-semibold text-foreground">{licenseStatus.expirationDate}</span>.

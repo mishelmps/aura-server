@@ -20,6 +20,7 @@ import AgentManagement from "@/pages/AgentManagement";
 import EnrollmentKeys from "@/pages/EnrollmentKeys";
 import MsiPackages from "@/pages/MsiPackages";
 import ComplianceSettings from "@/pages/ComplianceSettings";
+import Licensing from "@/pages/Licensing";
 import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();

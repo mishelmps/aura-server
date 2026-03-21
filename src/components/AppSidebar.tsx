@@ -1,6 +1,6 @@
 import {
   LayoutDashboard, Monitor, ShieldCheck, FileText, Bell, Building2, FileCode2, FilePlus, Users,
-  Settings, UserCog, Key, Package, ClipboardCheck
+  Settings, UserCog, Key, Package, ClipboardCheck, BadgeCheck
 } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";

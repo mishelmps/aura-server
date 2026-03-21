@@ -164,13 +164,14 @@
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35), 0 0 20px hsl(217 91% 60% / 0.08);
   }
   .light .glass-card-hover {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(248, 250, 252, 0.7));
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(235, 240, 252, 0.7));
+    border: 1px solid hsl(217 91% 50% / 0.12);
+    box-shadow: 0 2px 12px hsl(217 91% 50% / 0.06);
   }
   .light .glass-card-hover:hover {
-    border-color: rgba(0, 0, 0, 0.15);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 250, 252, 0.85));
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08), 0 0 20px hsl(217 91% 50% / 0.06);
+    border-color: hsl(217 91% 50% / 0.25);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(230, 238, 255, 0.85));
+    box-shadow: 0 12px 40px hsl(217 91% 50% / 0.1), 0 0 20px hsl(262 83% 55% / 0.06);
   }
 
   .glow-blue {

@@ -20,6 +20,7 @@ import AgentManagement from "@/pages/AgentManagement";
 import EnrollmentKeys from "@/pages/EnrollmentKeys";
 import MsiPackages from "@/pages/MsiPackages";
 import ComplianceSettings from "@/pages/ComplianceSettings";
+import Licensing from "@/pages/Licensing";
 import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -48,6 +49,7 @@ const App = () => (
               <Route path="/settings/enrollment-keys" element={<EnrollmentKeys />} />
               <Route path="/settings/msi" element={<MsiPackages />} />
               <Route path="/settings/compliance" element={<ComplianceSettings />} />
+              <Route path="/settings/licensing" element={<Licensing />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>

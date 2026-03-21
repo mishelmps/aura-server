@@ -1,6 +1,6 @@
 import {
   LayoutDashboard, Monitor, ShieldCheck, FileText, Bell, Building2, FileCode2, FilePlus, Users,
-  Settings, UserCog, Key, Package, ClipboardCheck
+  Settings, UserCog, Key, Package, ClipboardCheck, BadgeCheck
 } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";
@@ -30,6 +30,7 @@ const settingsItems = [
   { title: "Enrollment Keys", url: "/settings/enrollment-keys", icon: Key, iconClass: "icon-bg-yellow" },
   { title: "MSI Packages", url: "/settings/msi", icon: Package, iconClass: "icon-bg-purple" },
   { title: "Compliance", url: "/settings/compliance", icon: ClipboardCheck, iconClass: "icon-bg-green" },
+  { title: "Licensing", url: "/settings/licensing", icon: BadgeCheck, iconClass: "icon-bg-orange" },
 ];
 
 function NavGroup({ label, items }: { label: string; items: typeof mainItems }) {

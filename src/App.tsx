@@ -49,6 +49,7 @@ const App = () => (
               <Route path="/settings/enrollment-keys" element={<EnrollmentKeys />} />
               <Route path="/settings/msi" element={<MsiPackages />} />
               <Route path="/settings/compliance" element={<ComplianceSettings />} />
+              <Route path="/settings/licensing" element={<Licensing />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>

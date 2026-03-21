@@ -30,6 +30,7 @@ const settingsItems = [
   { title: "Enrollment Keys", url: "/settings/enrollment-keys", icon: Key, iconClass: "icon-bg-yellow" },
   { title: "MSI Packages", url: "/settings/msi", icon: Package, iconClass: "icon-bg-purple" },
   { title: "Compliance", url: "/settings/compliance", icon: ClipboardCheck, iconClass: "icon-bg-green" },
+  { title: "Licensing", url: "/settings/licensing", icon: BadgeCheck, iconClass: "icon-bg-orange" },
 ];
 
 function NavGroup({ label, items }: { label: string; items: typeof mainItems }) {

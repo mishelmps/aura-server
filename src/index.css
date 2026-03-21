@@ -145,9 +145,9 @@
     border-radius: var(--radius);
   }
   .light .glass-card {
-    background: linear-gradient(135deg, rgba(38, 50, 66, 0.6), rgba(30, 40, 56, 0.4));
-    border: 1px solid hsl(210 70% 55% / 0.12);
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.75), rgba(230, 235, 242, 0.55));
+    border: 1px solid hsl(215 14% 78% / 0.6);
+    box-shadow: 0 2px 12px hsl(215 30% 30% / 0.06);
   }
 
   .glass-card-hover {
